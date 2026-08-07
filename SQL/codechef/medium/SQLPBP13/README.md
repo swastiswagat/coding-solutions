@@ -4,37 +4,39 @@
 
 ## Problem
 
-### Distinct Companies
+### Locate People
 ### Task
+- Write a query to retrieve the department_name and location of departments located in a city that starts with 'S'.
 
-Write a query to select all the distinct companies (`company_name`) in the `Works` table.
-Table name:  **`Works`** 
+Table name:  **`departments`** 
 
-employee_id	company_name	salary
-1	TechCorp	75000.00
-2	InnovateLtd	62000.50
-3	HealthPlus	54000.75
-4	EduWorks	48000.00
-5	GreenTech	68000.00
-6	TechCorp	80000.00
-7	InnovateLtd	66000.20
-8	HealthPlus	50000.10
-9	EduWorks	51000.00
-10	GreenTech	72000.00
-### Expected Column
-- company_name
+department_id	department_name	location
+1	Human Resources	New York
+2	Research and Development	San Francisco
+3	Sales	Los Angeles
+4	Marketing	New York
+5	Customer Support	Boston
+6	Finance	Austin
+7	IT Support	Seattle
+8	Product Management	San Francisco
+9	Quality Assurance	Los Angeles
+10	Legal	Boston
+### Expected column
+- department_name
+- location
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T15:34:21.731Z  
+**Submitted:** 2026-08-07T15:33:13.218Z  
 
 ```sql
 -- your code goes here
-select distinct company_name
-from Works;
+select department_name, location
+from departments
+where location like "s%";
 ```
 
 ---
