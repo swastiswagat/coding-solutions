@@ -4,35 +4,47 @@
 
 ## Problem
 
-### Print I love CodeChef
+### Print Squares
 
-Print each word of the below-given sentence on a new line.
+Write a program to output the squares (using multiplication) of numbers from 1 to 5 on separate lines.
+
+### Sample 1:
+Input
+Output
 
 ```
-I love Codechef
 
 ```
 
- **Expected Output:** 
-I
-love
-CodeChef
+```
+1 - 1
+2 - 4
+3 - 9
+4 - 16
+5 - 25
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T15:14:29.543Z  
+**Submitted:** 2026-08-07T15:17:53.120Z  
 
 ```java
-public class Main {
-    public static void main(String[] args) {
-        // Your code here
-        System.out.println("i");
-        System.out.println("love");
-        System.out.println("Codechef");
-    }
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+		// your code goes here
+	    System.out.println(1 + " - " + (1 * 1));
+        System.out.println(2 + " - " + (2 * 2));
+        System.out.println(3 + " - " + (3 * 3));
+        System.out.println(4 + " - " + (4 * 4));
+        System.out.println(5 + " - " + (5 * 5));
+		
+
+	}
 }
 
 ```
