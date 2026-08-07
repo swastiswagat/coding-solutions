@@ -4,21 +4,39 @@
 
 ## Problem
 
-_Description not available._
+### Locate People
+### Task
+- Write a query to retrieve the department_name and location of departments located in a city that starts with 'S'.
+
+Table name:  **`departments`** 
+
+department_id	department_name	location
+1	Human Resources	New York
+2	Research and Development	San Francisco
+3	Sales	Los Angeles
+4	Marketing	New York
+5	Customer Support	Boston
+6	Finance	Austin
+7	IT Support	Seattle
+8	Product Management	San Francisco
+9	Quality Assurance	Los Angeles
+10	Legal	Boston
+### Expected column
+- department_name
+- location
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T15:31:56.862Z  
+**Submitted:** 2026-08-07T15:33:10.125Z  
 
 ```sql
 -- your code goes here
-
-select avg(salary) as avg_salary
-from Works;
-
+select department_name, location
+from departments
+where location like "s%";
 ```
 
 ---
