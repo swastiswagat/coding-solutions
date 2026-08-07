@@ -1,4 +1,4 @@
 -- your code goes here
-select Movie_name
-from Cinema
-where Rating > 7 and Rating < 9;
+select book_id, title, author, published_year
+from Library
+where rating is null;
