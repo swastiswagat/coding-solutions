@@ -4,39 +4,37 @@
 
 ## Problem
 
-### List of Movies with Ratings
+### Handling NULL Values
 ### Task
 
-Write a query to select only the movie names where the ratings are greater than 7 but less than 9.
+Write a query to retrieve book_id, title, author and published_year of the books which have  **NULL**  rating for their books.
 
-Table:  **`Cinema`** 
+ **Table name** : `Library`
 
-Movie_id	Movie_name	Description	Rating
-1	War	great 3D	8.9
-2	Science	fiction	8.5
-3	Irish	boring	6.2
-4	Ice Song	Fantasy	8.6
-5	House Card	Interesting	9.1
-6	The Escape	Thriller	7.8
-7	Solar Flare	Sci-Fi	8.3
-8	The Joker	Drama	9.0
-9	Lost Dreams	Mystery	7.5
-10	Galaxy War	Action	8.7
+book_id	title	author	published_year	rating
+1	The Great Gatsby	F. Scott Fitzgerald	1925	4.2
+2	To Kill a Mockingbird	Harper Lee	1960	NULL
+3	1984	George Orwell	1949	4.8
+4	The Catcher in the Rye	J.D. Salinger	1951	NULL
+5	Brave New World	Aldous Huxley	1932	4.3
 ### Expected column
-- Movie_name
+- book_id
+- title
+- author
+- published_year
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T15:41:07.690Z  
+**Submitted:** 2026-08-07T15:42:52.924Z  
 
 ```sql
 -- your code goes here
-select Movie_name
-from Cinema
-where Rating > 7 and Rating < 9;
+select book_id, title, author, published_year
+from Library
+where rating is null;
 ```
 
 ---
