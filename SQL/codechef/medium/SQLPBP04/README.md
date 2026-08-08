@@ -4,20 +4,54 @@
 
 ## Problem
 
-_Description not available._
+### Player Performance Insights
+### Task
+
+Write a query to find the names of the  **top 3 distinct players**  by highest score who have  **won**  matches, including their  **scores**.
+
+Table 1:  **Players** 
+
+player_id	player_name	score	rank
+1	Alice	1200	5
+2	Bob	1500	2
+3	Charlie	1300	4
+4	David	1600	1
+5	Eve	1100	6
+
+Table 2:  **Matches** 
+
+match_id	player1	player2	winner	match_date
+101	Alice	Bob	Bob	2024-01-15
+102	Charlie	David	David	2024-01-16
+103	Eve	Bob	Bob	2024-01-17
+104	Alice	David	David	2024-01-18
+105	Charlie	Eve	Charlie	2024-01-19
+### Expected Output Columns:
+
+```
+┌─────────────┬───────┐
+│ player_name │ score │
+├─────────────┼───────┤
+│ David       │ 1600  │
+│ Bob         │ 1500  │
+│ Charlie     │ 1300  │
+└─────────────┴───────┘
+
+```
 
 ## Solution
 
-**Language:** C++  
+**Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T16:05:54.844Z  
+**Submitted:** 2026-08-08T10:36:44.004Z  
 
-```cpp
+```sql
 -- your code goes here
-select author_id, author_name, publication_name
-from Views
-order by author_id asc;
+select player_name , score 
+from ( select player_name , score , dense_rank()over(order by score desc) as drnk 
+from players)
+where drnk <=3 ; 
 ```
 
 ---
