@@ -40,7 +40,7 @@ Explanation: The given operations are performed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T21:05:31.647Z  
+**Submitted:** 2026-08-19T21:06:15.498Z  
 
 ```java
 import java.util.*;
