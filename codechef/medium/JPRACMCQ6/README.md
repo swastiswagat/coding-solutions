@@ -52,7 +52,7 @@ if (2*Y >= X) {
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T12:20:35.096Z  
+**Submitted:** 2026-09-12T12:20:40.720Z  
 
 ```cpp
 import java.util.*;
