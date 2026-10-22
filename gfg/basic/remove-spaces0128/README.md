@@ -29,7 +29,7 @@ Explanation:  All space characters are removed from the given string while prese
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-22T17:14:36.288Z  
+**Submitted:** 2026-10-22T17:17:51.440Z  
 
 ```java
 class Solution {
