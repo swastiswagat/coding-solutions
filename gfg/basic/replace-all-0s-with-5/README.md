@@ -26,7 +26,7 @@ Explanation: Since there are no zeroes in 121, the number remains as 121.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-30T10:35:10.201Z  
+**Submitted:** 2026-10-30T10:36:37.225Z  
 
 ```java
 class Solution {
