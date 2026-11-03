@@ -32,7 +32,7 @@ Explanation: 1 is equal to 2 raised to 0 (20 = 1).
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T13:40:26.034Z  
+**Submitted:** 2026-11-03T13:45:13.238Z  
 
 ```java
 class Solution {
@@ -41,7 +41,10 @@ class Solution {
         if (n <= 0) {
             return false;
         }
-        return (n & (n - 1)) == 0;
+        while (n % 2 == 0) {
+            n /= 2;
+        }
+        return n == 1;
     }
 }
 ```
