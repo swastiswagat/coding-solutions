@@ -47,9 +47,9 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42 MB  
-**Submitted:** 2026-11-03T14:38:23.059Z  
+**Runtime:** 2 ms (beats 11.28%)  
+**Memory:** 43.2 MB (beats 77.84%)  
+**Submitted:** 2026-11-03T14:38:30.948Z  
 
 ```java
 class Solution {
