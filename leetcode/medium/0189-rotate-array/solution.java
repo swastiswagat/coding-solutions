@@ -13,7 +13,7 @@ class Solution {
             j++;
         }
         for (int i = 0; i < nums.length; i++){
-        nums[0] = b[i];
+        nums[i] = b[i];
         }
     }
 }
