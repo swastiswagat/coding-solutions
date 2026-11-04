@@ -50,8 +50,8 @@ rotate 2 steps to the right: [3,99,-1,-100]
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-11-04T14:07:28.457Z  
+**Memory:** 41.6 MB  
+**Submitted:** 2026-11-04T14:07:47.616Z  
 
 ```java
 class Solution {
@@ -69,7 +69,7 @@ class Solution {
             j++;
         }
         for (int i = 0; i < nums.length; i++){
-        nums[0] = b[i];
+        nums[i] = b[i];
         }
     }
 }
