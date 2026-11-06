@@ -47,13 +47,10 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 99.88%)  
-**Memory:** 46.3 MB (beats 88.75%)  
-**Submitted:** 2026-11-06T14:54:47.083Z  
+**Memory:** 46.1 MB (beats 94.20%)  
+**Submitted:** 2026-11-06T17:11:02.450Z  
 
 ```java
-import java.util.ArrayList;
-import java.util.List;
-
 class Solution {
     public List<String> fizzBuzz(int n) {
         List<String> answer = new ArrayList<>();
