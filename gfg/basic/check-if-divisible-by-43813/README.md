@@ -27,7 +27,7 @@ Explanation: As 7 % 4 = 3, the number is not divisible by 4. Hence, the output i
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-06T17:35:18.529Z  
+**Submitted:** 2026-11-06T17:35:41.390Z  
 
 ```java
 class Solution {
@@ -37,9 +37,9 @@ class Solution {
         int num = Integer.parseInt(s);
         return (num % 4 == 0);
         }
-        String lastTwoDigits = s.substring(s.length() - 2);
+        String last = s.substring(s.length() - 2);
         
-            int num = Integer.parseInt(lastTwoDigits);
+            int num = Integer.parseInt(last);
             return num % 4 == 0;
         
     }
