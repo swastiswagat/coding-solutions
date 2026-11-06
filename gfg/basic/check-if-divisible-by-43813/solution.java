@@ -5,9 +5,9 @@ class Solution {
         int num = Integer.parseInt(s);
         return (num % 4 == 0);
         }
-        String lastTwoDigits = s.substring(s.length() - 2);
+        String last = s.substring(s.length() - 2);
         
-            int num = Integer.parseInt(lastTwoDigits);
+            int num = Integer.parseInt(last);
             return num % 4 == 0;
         
     }
