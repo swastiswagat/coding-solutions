@@ -39,18 +39,21 @@ Output: ["h","a","n","n","a","H"]
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 49.07%)  
-**Memory:** 47.6 MB (beats 89.98%)  
-**Submitted:** 2026-11-13T13:57:01.595Z  
+**Memory:** 47.9 MB (beats 76.53%)  
+**Submitted:** 2026-11-13T14:00:29.960Z  
 
 ```java
 class Solution {
     public void reverseString(char[] s) {
-        char[] res = new char[s.length];
-        for (int i = s.length - 1; i >= 0 ;i--) {
-            res[s.length - 1 - i] += s[i];
-        }
-        for (int i = 0; i <s.length; i++) {
-            s[i] = res[i];
+        int st = 0;
+        int end = s.length - 1;
+
+        while (st < end) {
+            char temp = s[st];
+            s[st] = s[end];
+            s[end] = temp;
+            st++;
+            end--;
         }
     }
 }
