@@ -1,6 +1,5 @@
-/* Write your PL/SQL query statement below */
-SELECT MAX(Salary) as SecondHighestSalary
-FROM (SELECT Salary, DENSE_RANK() OVER (ORDER BY salary DESC) as RNK
-FROM Employee
-)
-WHERE RNK = 2;
+# Write your MySQL query statement beloselect 
+select Max(salary) as SecondHighestSalary
+from Employee
+where salary < (select MAX(salary)
+from Employee);
