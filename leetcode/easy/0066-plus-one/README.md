@@ -56,23 +56,23 @@ Thus, the result should be [1,0].
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.3 MB  
-**Submitted:** 2026-11-24T14:38:13.629Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.8 MB (beats 86.47%)  
+**Submitted:** 2026-11-24T14:44:47.683Z  
 
 ```java
 class Solution {
     public int[] plusOne(int[] digits) {
-        for (int i = digits.length - 1; i >= 0; i--) {
+        for (int i = digits.length -1; i >= 0; i--) {
             if (digits[i] < 9) {
-                digits[i]++;
-                return digits;
-            }
-            digits[i] = 0;
+            digits[i]++;
+            return digits;
         }
-        int[] result = new int[digits.length + 1];
-        result[0] = 1;
-        return result;
+        digits[i] = 0;
+    }
+    int[] res = new int[digits.length + 1];
+    res[0] = 1;
+    return res;
     }
 }
 ```
