@@ -4,32 +4,33 @@
 
 ## Problem
 
-### Rearrange Code
-
-You want to input two integers, and output their sum.
-
-Rearrange the code given, so that it does the above task.
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T18:47:25.560Z  
+**Submitted:** 2026-11-25T17:55:51.763Z  
 
-```cpp
-import java.util.Scanner; 
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
 class Codechef
 {
-	public static void main (String[] args)
+	public static void main (String[] args) throws java.lang.Exception
 	{
-	    // Do not print anything here before taking input
-	    Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		
-		// Print the value of n
-		System.out.print(n);
-		
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		if (sc.hasNextInt()) {
+		    int x = sc.nextInt();
+		    int y = sc.nextInt();
+		    int h = sc.nextInt();
+		    System.out.println(x + (h  - 1) * y);
+		}
+		sc.close();
 	}
 }
 
