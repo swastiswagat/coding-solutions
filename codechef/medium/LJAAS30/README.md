@@ -4,8 +4,6 @@
 
 ## Problem
 
-### Convert Temperature
-
 Declare a variable  **"temperature"**  and initialise it with a value of  **25.5**  (in Celsius) and Print it in Celsius and Kelvin(add 273 to temperature in Celsius).
 Print the output in the same format as given below.(there is a single space around - (hyphen))
 
@@ -27,14 +25,16 @@ Kelvin - 298.5
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T18:20:10.667Z  
+**Submitted:** 2026-11-25T18:00:20.391Z  
 
 ```java
 public class Main {
     public static void main(String[] args) {
-        double temperature = 25.5;
-        System.out.println("Celsius - " + temperature);
-        System.out.println("Kelvin - " + (temperature + 273));
+        // Your code goes here
+        double a = 25.5;
+        System.out.println("Celsius - " + a);
+        System.out.println("Kelvin - " + (a + 273));
+        
     }
 }
 
