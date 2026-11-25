@@ -13,6 +13,8 @@ Given an integer `n`, return  *a string array* `answer` *(**1-indexed**) where* 
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -46,9 +48,9 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 99.88%)  
-**Memory:** 46.1 MB (beats 94.20%)  
-**Submitted:** 2026-11-06T17:11:02.450Z  
+**Runtime:** 1 ms (beats 99.90%)  
+**Memory:** 46.5 MB (beats 53.41%)  
+**Submitted:** 2026-11-25T21:36:36.746Z  
 
 ```java
 class Solution {
