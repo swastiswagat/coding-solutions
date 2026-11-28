@@ -56,19 +56,17 @@ Explanation: Joe is the only employee who earns more than his manager.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 3589 ms (beats 5.03%)  
+**Runtime:** 827 ms (beats 9.82%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-12T18:27:31.958Z  
+**Submitted:** 2026-11-28T17:43:14.762Z  
 
 ```sql
-/* Write your PL/SQL query statement below */
-SELECT e1.name AS Employee
-FROM Employee e1
-WHERE e1.salary > (
-    SELECT e2.salary 
-    FROM Employee e2 
-    WHERE e2.id = e1.managerId
-);
+# Write your MySQL query statement 
+select e.name as Employee
+from Employee e
+where e.salary > (select m.salary
+from Employee m
+where m.id = e.managerId);
 ```
 
 ---
