@@ -19,13 +19,12 @@ Create a program to perform the following:
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T18:17:13.239Z  
+**Submitted:** 2026-11-28T16:50:07.575Z  
 
 ```js
 // your code goes here
 let a = 30;
 let b = 10;
-
 console.log(a / b)
 ```
 
